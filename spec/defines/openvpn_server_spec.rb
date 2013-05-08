@@ -77,6 +77,7 @@ describe 'openvpn::server', :type => :define do
       'dev'           => 'tun1',
       'local'         => '2.3.4.5',
       'ipp'           => true,
+      'cipher'        => 'AES-256-CBC',
       'server'        => '2.3.4.0 255.255.0.0',
       'push'          => [ 'dhcp-option DNS 172.31.0.30', 'route 172.31.0.0 255.255.0.0' ]
     } }

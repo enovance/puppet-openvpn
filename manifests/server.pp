@@ -129,6 +129,7 @@ define openvpn::server(
   $status_log = "${name}/openvpn-status.log",
   $server = '',
   $push = []
+  $cipher = 'AES-256-CBC',
 ) {
 
   include openvpn

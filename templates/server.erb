@@ -22,6 +22,9 @@ dev <%= scope.lookupvar('dev') %>
 <% if scope.lookupvar('local') != '' -%>
 local <%= scope.lookupvar('local') %>
 <% end -%>
+<% if scope.lookupvar('cipher') != '' -%>
+cipher <%= scope.lookupvar('cipher') %>
+<% end -%>
 <% if scope.lookupvar('ipp') -%>
 ifconfig-pool-persist <%= scope.lookupvar('name') %>/vpn-ipp.txt
 <% end -%>
